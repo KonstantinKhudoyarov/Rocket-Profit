@@ -34,7 +34,6 @@ ul {
   margin: 0;
 }
 .container {
-  box-sizing: border-box;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -52,6 +51,17 @@ input::-ms-clear {
   font-size: 40px;
   text-align: center;
   line-height: 38px;
+}
+
+.btn {
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+  background: #08B1C4;
+  border-radius: 50px;
+  outline: none;
+  border: none;
 }
 
 @import "common/shop.scss";
