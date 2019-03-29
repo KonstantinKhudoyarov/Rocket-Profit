@@ -168,6 +168,10 @@ function postDate(sa, countryName, isAbbreviated) {
             fo = formatstring || true;
 
         switch (fo) {
+            case "year":
+                innerDate += "" + year;
+                return innerDate;
+
             case "mm.dd.yyyy": 
                 innerDate += (month < 10) ? ("0" + month) : month;
                 innerDate += ".";

@@ -54,11 +54,39 @@ input::-ms-clear {
   line-height: 38px;
 }
 
+.button {
+  display: block;
+  cursor: pointer;
+  background: #08B1C4;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 1;
+  padding: 15px;
+  transition: .5s;
+}
+
+.button:hover {
+  background: #088AA7;
+}
+
+.privacy-policy {
+  color: #12ABBF;
+}
+
+.privacy-policy:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+}
+
 @import "common/shop.scss";
 
 @media screen and (max-width: 1299px){
   .container {
     width: 100%;
+    padding: 0 30px;
   }
   .title {
     font-size: 36px;
@@ -77,6 +105,11 @@ input::-ms-clear {
     font-size: 34px;
     line-height: 34px;
   }
+
+  .container {
+    padding: 0 25px;
+  }
+
 }
 
 
