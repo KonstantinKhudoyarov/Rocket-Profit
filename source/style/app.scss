@@ -20,6 +20,11 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
@@ -42,10 +47,10 @@ input::-ms-clear {
   display: none;
 }
 
-::-webkit-input-placeholder { color: #333333; font-size: 16px; }
-::-moz-placeholder          { color: #333333; font-size: 16px; } /* Firefox 19+ */
-:-moz-placeholder           { color: #333333; font-size: 16px; } /* Firefox 18- */
-:-ms-input-placeholder      { color: #333333; font-size: 16px; }
+::-webkit-input-placeholder { color: #8892A1; font-size: 14px; }
+::-moz-placeholder          { color: #8892A1; font-size: 14px; } /* Firefox 19+ */
+:-moz-placeholder           { color: #8892A1; font-size: 14px; } /* Firefox 18- */
+:-ms-input-placeholder      { color: #8892A1; font-size: 14px; }
 
 .title {
   font-size: 40px;
@@ -65,8 +70,16 @@ input::-ms-clear {
   transition: .4s;
 }
 
-.btn:hover {
-  background: #088AA7;
+.btn_non-active {
+  color: #A9B1BC;
+  background: #EDF1F3;
+}
+
+.btn_hover {
+
+  &:hover {
+    background: #088AA7;
+  }
 }
 
 .privacy-policy {
