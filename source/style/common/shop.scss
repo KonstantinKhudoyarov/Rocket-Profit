@@ -249,6 +249,12 @@
     border: 1px solid transparent;
     border-bottom: 1px solid #E6E6E6;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    &>* {
+      flex: 1 1 100%;
+    }
 
     &:not(:nth-child(4n)) {
         border-right: 1px solid #E6E6E6;
@@ -277,7 +283,6 @@
 }
 
 .shop__item_non-active {
-  z-index: 10;
 
   &:hover {
 
@@ -306,9 +311,12 @@
 }
 
 .shop__item-category {
+  margin-bottom: 23px;
+}
+
+.shop__item-category-inner {
     display: inline-block;
     padding: 6px 9px 4px 10px;
-    margin-bottom: 23px;
     font-size: 10px;
     line-height: 10px;
     text-align: center;
