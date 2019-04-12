@@ -107,6 +107,20 @@
         right: 0;
         transform: translateY(-50%);
         background: url('../img/lang-arrow.svg') 0 0 no-repeat;
+        transition: .4s;
+    }
+}
+
+.lang_active {
+
+    &::before {
+        transform: translateY(-50%) rotateX(180deg);
+    }
+
+    .lang__list {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 }
 
@@ -144,11 +158,11 @@
     }
 }
 
-.lang__list_active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+// .lang__list_active {
+//     opacity: 1;
+//     transform: translateY(0);
+//     pointer-events: auto;
+// }
 
 .lang__item {
     display: flex;
