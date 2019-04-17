@@ -212,6 +212,13 @@
     padding: 10px 0;
 }
 
+.mobile-menu__item_active {
+
+    .mobile-menu__link {
+        color: #08B1C4;
+    }
+}
+
 .mobile-menu__link {
     font-size: 20px;
     color: #fff;
