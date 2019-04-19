@@ -23,10 +23,12 @@
 
   mobileMenuBtnOpen.addEventListener('click', function () {
     mobileMenuOverlay.classList.add('mobile-menu_open');
+    document.body.classList.add('menu-open');
   });
 
   mobileMenuBtnClose.addEventListener('click', function () {
     mobileMenuOverlay.classList.remove('mobile-menu_open');
+    document.body.classList.remove('menu-open');
   });
 
   langMobile.addEventListener('click', function () {
